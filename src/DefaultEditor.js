@@ -10,9 +10,9 @@ import {
   StyleMapsPanel,
   StyleLegendPanel,
   StyleNotesPanel,
-  StyleShapesPanel,
+  // StyleShapesPanel,
   StyleSlidersPanel,
-  StyleImagesPanel,
+  // StyleImagesPanel,
   StyleTracesPanel,
   StyleColorbarsPanel,
   StyleUpdateMenusPanel,
@@ -96,8 +96,7 @@ class DefaultEditor extends Component {
         {this.hasLegend() && <StyleLegendPanel group={_('Style')} name={_('Legend')} />}
         {this.hasColorbars() && <StyleColorbarsPanel group={_('Style')} name={_('Color Bars')} />}
         <StyleNotesPanel group={_('Annotate')} name={_('Text')} />
-        <StyleShapesPanel group={_('Annotate')} name={_('Shapes')} />
-        <StyleImagesPanel group={_('Annotate')} name={_('Images')} />
+        {/* <StyleShapesPanel group={_('Annotate')} name={_('Shapes')} /> */}
         {this.hasSliders() && <StyleSlidersPanel group={_('Control')} name={_('Sliders')} />}
         {this.hasMenus() && <StyleUpdateMenusPanel group={_('Control')} name={_('Menus')} />}
         {children || null}

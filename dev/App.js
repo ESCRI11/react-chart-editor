@@ -9,7 +9,7 @@ import Inspector from 'react-inspector';
 import dataSources from './dataSources';
 
 // https://github.com/plotly/react-chart-editor#mapbox-access-tokens
-import ACCESS_TOKENS from '../accessTokens';
+import ACCESS_TOKENS from '../accessTokens.tpl.js';
 
 // import {customConfigTest} from './customConfigTest';
 
