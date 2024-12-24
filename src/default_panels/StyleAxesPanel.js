@@ -368,21 +368,21 @@ class StyleAxesPanel extends Component {
             </VisibilitySelect>
           </PlotlySection>
         </AxesFold>
-
-        <AxesFold name={_('Range Slider')} axisFilter={(axis) => axis._subplot.includes('xaxis')}>
-          <RangesliderVisible
-            attr="rangeslider.visible"
-            options={[
-              {label: _('Show'), value: true},
-              {label: _('Hide'), value: false},
-            ]}
-          />
-          <NumericFraction label={_('Height')} attr="rangeslider.thickness" />
-          <ColorPicker label={_('Background Color')} attr="rangeslider.bgcolor" />
-          <Numeric label={_('Border Width')} attr="rangeslider.borderwidth" units="px" />
-          <ColorPicker label={_('Border Color')} attr="rangeslider.bordercolor" />
-        </AxesFold>
-
+        {/**/}
+        {/* <AxesFold name={_('Range Slider')} axisFilter={(axis) => axis._subplot.includes('xaxis')}> */}
+        {/*   <RangesliderVisible */}
+        {/*     attr="rangeslider.visible" */}
+        {/*     options={[ */}
+        {/*       {label: _('Show'), value: true}, */}
+        {/*       {label: _('Hide'), value: false}, */}
+        {/*     ]} */}
+        {/*   /> */}
+        {/*   <NumericFraction label={_('Height')} attr="rangeslider.thickness" /> */}
+        {/*   <ColorPicker label={_('Background Color')} attr="rangeslider.bgcolor" /> */}
+        {/*   <Numeric label={_('Border Width')} attr="rangeslider.borderwidth" units="px" /> */}
+        {/*   <ColorPicker label={_('Border Color')} attr="rangeslider.bordercolor" /> */}
+        {/* </AxesFold> */}
+        {/**/}
         <AxesFold
           name={_('Timescale Buttons')}
           axisFilter={(axis) => axis._subplot.includes('xaxis') && axis.type === 'date'}
@@ -463,35 +463,35 @@ class StyleAxesPanel extends Component {
           </PlotlySection>
         </AxesFold>
 
-        <AxesFold
-          name={_('Spike Lines')}
-          axisFilter={(axis) =>
-            !(
-              axis._subplot.includes('ternary') ||
-              axis._subplot.includes('polar') ||
-              axis._subplot.includes('geo')
-            )
-          }
-        >
-          <Radio
-            attr="showspikes"
-            options={[
-              {label: _('Show'), value: true},
-              {label: _('Hide'), value: false},
-            ]}
-          />
-          <Radio
-            attr="spikesides"
-            label={_('Show Sides')}
-            options={[
-              {label: _('Show'), value: true},
-              {label: _('Hide'), value: false},
-            ]}
-          />
-
-          <Numeric label={_('Thickness')} attr="spikethickness" units="px" />
-          <ColorPicker label={_('Color')} attr="spikecolor" />
-        </AxesFold>
+        {/* <AxesFold */}
+        {/*   name={_('Spike Lines')} */}
+        {/*   axisFilter={(axis) => */}
+        {/*     !( */}
+        {/*       axis._subplot.includes('ternary') || */}
+        {/*       axis._subplot.includes('polar') || */}
+        {/*       axis._subplot.includes('geo') */}
+        {/*     ) */}
+        {/*   } */}
+        {/* > */}
+        {/*   <Radio */}
+        {/*     attr="showspikes" */}
+        {/*     options={[ */}
+        {/*       {label: _('Show'), value: true}, */}
+        {/*       {label: _('Hide'), value: false}, */}
+        {/*     ]} */}
+        {/*   /> */}
+        {/*   <Radio */}
+        {/*     attr="spikesides" */}
+        {/*     label={_('Show Sides')} */}
+        {/*     options={[ */}
+        {/*       {label: _('Show'), value: true}, */}
+        {/*       {label: _('Hide'), value: false}, */}
+        {/*     ]} */}
+        {/*   /> */}
+        {/**/}
+        {/*   <Numeric label={_('Thickness')} attr="spikethickness" units="px" /> */}
+        {/*   <ColorPicker label={_('Color')} attr="spikecolor" /> */}
+        {/* </AxesFold> */}
       </LayoutPanel>
     );
   }

@@ -12,7 +12,7 @@ import 'brace/mode/json';
 import 'brace/theme/textmate';
 
 // https://github.com/plotly/react-chart-editor#mapbox-access-tokens
-import ACCESS_TOKENS from '../accessTokens';
+import ACCESS_TOKENS from '../accessTokens.tpl.js';
 
 // import {customConfigTest} from '../src/__stories__';
 
